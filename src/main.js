@@ -479,7 +479,7 @@ drawChart({ config, language, weather, forecastItems } = this) {
   var style = getComputedStyle(document.body);
   var backgroundColor = style.getPropertyValue('--card-background-color');
   var textColor = style.getPropertyValue('--primary-text-color');
-  var dividerColor = 'rgba(0,0,0, 1.0)';
+  var dividerColor = textColor;
   const canvas = this.renderRoot.querySelector('#forecastChart');
   if (!canvas) {
     requestAnimationFrame(() => this.drawChart());
@@ -895,6 +895,9 @@ updateChart({ forecasts, forecastChart } = this) {
           flex-direction: column;
           align-items: center;
           margin: 1px;
+        }
+        .forecast-item ha-icon {
+          color: rgba(0,0,0,1.0);
         }
         .wind-details {
           display: flex;
