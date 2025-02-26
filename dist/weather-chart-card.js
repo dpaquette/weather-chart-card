@@ -18290,7 +18290,7 @@ drawChart({ config, language, weather, forecastItems } = this) {
   var style = getComputedStyle(document.body);
   var backgroundColor = style.getPropertyValue('--card-background-color');
   var textColor = style.getPropertyValue('--primary-text-color');
-  var dividerColor = style.getPropertyValue('--divider-color');
+  var dividerColor = rgba(0,0,0, 1.0);
   const canvas = this.renderRoot.querySelector('#forecastChart');
   if (!canvas) {
     requestAnimationFrame(() => this.drawChart());
@@ -18678,7 +18678,7 @@ updateChart({ forecasts, forecastChart } = this) {
         }
         .main span {
           font-size: 18px;
-          color: var(--secondary-text-color);
+          color: rgba(0,0,0,1.0)
         }
         .attributes {
           display: flex;
@@ -18730,18 +18730,21 @@ updateChart({ forecasts, forecastChart } = this) {
           margin-inline-end: 1px;
           position: relative;
 	        bottom: 1px;
+          color: rgba(0,0,0,1.0);
         }
         .wind-speed {
           font-size: 11px;
           margin-right: 1px;
           margin-inline-start: initial;
           margin-inline-end: 1px;
+          color: rgba(0,0,0,1.0);
         }
         .wind-unit {
           font-size: 9px;
           margin-left: 1px;
           margin-inline-start: 1px;
           margin-inline-end: initial;
+          color: rgba(0,0,0,1.0);
         }
         .current-time {
           position: absolute;
@@ -18753,7 +18756,7 @@ updateChart({ forecasts, forecastChart } = this) {
         }
         .date-text {
           font-size: ${config.day_date_size}px;
-          color: var(--secondary-text-color);
+          color: rgba(0,0,0,1.0);
         }
         .main .feels-like {
           font-size: 13px;
