@@ -479,7 +479,7 @@ drawChart({ config, language, weather, forecastItems } = this) {
   var style = getComputedStyle(document.body);
   var backgroundColor = style.getPropertyValue('--card-background-color');
   var textColor = style.getPropertyValue('--primary-text-color');
-  var dividerColor = rgba(0,0,0, 1.0);
+  var dividerColor = 'rgba(0,0,0, 1.0)';
   const canvas = this.renderRoot.querySelector('#forecastChart');
   if (!canvas) {
     requestAnimationFrame(() => this.drawChart());
