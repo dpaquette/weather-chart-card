@@ -903,7 +903,7 @@ updateChart({ forecasts, forecastChart } = this) {
           display: flex;
           justify-content: space-around;
           align-items: center;
-          font-weight: 300;
+          font-weight: 500;
         }
         .wind-detail {
           display: flex;
