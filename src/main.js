@@ -925,14 +925,14 @@ updateChart({ forecasts, forecastChart } = this) {
           color: rgba(0,0,0,1.0);
         }
         .wind-speed {
-          font-size: 11px;
+          font-size: 14px;
           margin-right: 1px;
           margin-inline-start: initial;
           margin-inline-end: 1px;
           color: rgba(0,0,0,1.0);
         }
         .wind-unit {
-          font-size: 9px;
+          font-size: 11px;
           margin-left: 1px;
           margin-inline-start: 1px;
           margin-inline-end: initial;
